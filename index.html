@@ -9,53 +9,56 @@
 </head>
 <body>
 
-    <div class="leftContainer">
-        <div class="logoBackground">
-            <img src="images/odin-lined.png" alt="Logo outline of Norse God Odin">
-            <h1>ODIN</h1>
-        </div>
-        <footer class="logoFooter">photo by Luke, creator of this page</footer>
-    </div>
+    <div class="mainContainer">
 
-    <div class="rightContainer">
-        <div class="topContainer">
-            <p>This is not a real service! You know you need something like this is your life 
-               to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-            </p>
-            <p>You <em>know</em> you want to.</p>
+        <div class="leftContainer">
+            <div class="logoBackground">
+                <img class="logo" src="images/odin-lined.png" alt="Logo outline of Norse God Odin">
+                <h1 class="odin">ODIN</h1>
+            </div>
+            <footer class="logoFooter">photo by Luke, creator of this page</footer>
         </div>
-        <div class="formContainer">
-            <form action="" method="post">
-                <h1>Let's do this!</h1>
-                <div class="firstName">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName">
-                </div>
-                <div class="lastName">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName">
-                </div>
-                <div class="email">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="phone">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
-                </div>
-                <div class="pwd">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" name="password" id="pwd">
-                </div>
-                <div class="pwdConfirm">
-                    <label for="pwdConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="passwordConfirm" id="pwdConfirm">
-                </div>
-            </form>
-        </div>
-        <div class="bottomContainer">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log In</a></p>
+
+        <div class="rightContainer">
+            <div class="topContainer">
+                <p>This is not a real service! You know you need something like this is your life
+                   to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="formContainer">
+                <p>Let's do this!</p>
+                <form id="myForm" action="" method="post">
+                    <div class="firstName">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="pwd error">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" name="password" id="pwd" required >
+                    </div>
+                    <div class="pwdConfirm error">
+                        <label for="pwdConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="passwordConfirm" id="pwdConfirm" required>
+                    </div>
+                </form>
+            </div>
+            <div class="bottomContainer">
+                <button form="myForm" type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log In</a></p>
+            </div>
         </div>
     </div>
 
