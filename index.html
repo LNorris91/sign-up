@@ -28,22 +28,22 @@
             </div>
             <div class="formContainer">
                 <p>Let's do this!</p>
-                <form id="myForm" action="" method="post">
+                <form id="myForm" action="" method="post" onsubmit="window.location.reload(); return false">
                     <div class="firstName">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName" required>
+                        <input type="text" name="firstName" id="firstName" required pattern="[a-zA-Z]*" placeholder="John">
                     </div>
                     <div class="lastName">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName" required>
+                        <input type="text" name="lastName" id="lastName" required pattern="[a-zA-Z]*" placeholder="Doe">
                     </div>
                     <div class="email">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required placeholder="example@email.com">
                     </div>
                     <div class="phone">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone" required>
+                        <input type="tel" name="phone" id="phone" required pattern="[0-9]*" placeholder="(xxx)-xxx-xxxx">
                     </div>
                     <div class="pwd error">
                         <label for="pwd">PASSWORD</label>
@@ -52,12 +52,14 @@
                     <div class="pwdConfirm error">
                         <label for="pwdConfirm">CONFIRM PASSWORD</label>
                         <input type="password" name="passwordConfirm" id="pwdConfirm" required>
+                        <span class="errorMsg"></span>
                     </div>
                 </form>
             </div>
             <div class="bottomContainer">
                 <button form="myForm" type="submit">Create Account</button>
                 <p>Already have an account? <a href="">Log In</a></p>
+                <span class="logInMsg"></span>
             </div>
         </div>
     </div>
